@@ -1,9 +1,6 @@
 <template>
     <div>
-        <b-button variant="outline-primary" class="ml-4 mt-4" v-b-toggle.sidebar-1>
-            <BIconList icon="list" aria-label="Show Sidebar" />
-        </b-button>
-        <b-sidebar id="sidebar-1" title="Pádel Portfolio" shadow backdrop>
+        <b-sidebar id="sidebar-menu" title="Pádel Portfolio" shadow backdrop>
             <b-nav vertical>
                 <b-nav-item><NuxtLink to="/stats"><BIconPieChart aria-label="Go to stats page"/> Stats</NuxtLink></b-nav-item>
                 <b-nav-item><NuxtLink to="/players"><BIconPeople aria-label="Go to players page"/> Jugadores</NuxtLink></b-nav-item>
@@ -30,12 +27,12 @@
 
 <script lang="ts">
 import Vue from 'vue';
-import { BIconList, BIconPieChart, BIconPeople, BIconHouseDoor, 
+import { BIconPieChart, BIconPeople, BIconHouseDoor, 
     BIconTrophy, BIconIntersect, BIconBootstrap } from 'bootstrap-vue';
 
 export default Vue.extend({
     components: { 
-        BIconList, BIconPieChart, BIconPeople, BIconHouseDoor, BIconTrophy, BIconIntersect, BIconBootstrap 
+        BIconPieChart, BIconPeople, BIconHouseDoor, BIconTrophy, BIconIntersect, BIconBootstrap 
     }
 })
 </script>
