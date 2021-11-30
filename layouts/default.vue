@@ -2,6 +2,6 @@
   <div>
     <NavBar />
     <SideBar />
-    <Nuxt />
+    <Nuxt class="p-3"/>
   </div>
 </template>
