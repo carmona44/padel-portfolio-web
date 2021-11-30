@@ -1,11 +1,18 @@
 <template>
-    <Table :items="items" :fields="fields"/>
+    <div>
+        <div class="mb-4">
+            <b-button variant="primary"><BIconPersonPlus /> Crear jugador</b-button>
+        </div>
+        <Table :items="items" :fields="fields"/>
+    </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
+import { BIconPersonPlus } from 'bootstrap-vue';
 
 export default Vue.extend({
+    components: { BIconPersonPlus },
     data() {
         return {
             items: [
