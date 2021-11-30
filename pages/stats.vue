@@ -1,3 +1,3 @@
 <template>
-    <div>Probando</div>
+    <div>Página de estadísticas</div>
 </template>
