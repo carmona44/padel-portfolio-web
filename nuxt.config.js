@@ -39,13 +39,7 @@ export default {
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
     'bootstrap-vue/nuxt',
-    '@nuxtjs/localforage',
   ],
-
-  localforage: {
-    name: 'padelPortfolio',
-    storeName: 'padelPortfolioForage'
-  },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
