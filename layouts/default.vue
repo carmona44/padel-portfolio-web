@@ -1,6 +1,6 @@
 <template>
   <div>
-    <NavBar class="p-3"/>
+    <NavBar/>
     <SideBar />
     <Nuxt class="p-3"/>
   </div>

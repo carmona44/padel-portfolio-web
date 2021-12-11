@@ -25,6 +25,7 @@
 
 <script lang="ts">
 import Vue from 'vue';
+import localforage from 'localforage';
 import { BIconPersonPlus } from 'bootstrap-vue';
 
 export default Vue.extend({
@@ -74,10 +75,11 @@ export default Vue.extend({
         bvModalEvt.preventDefault();
         this.handleSubmit();
       },
-      handleSubmit() {
+      async handleSubmit() {
         if (!this.checkFormValidity()) {
           return;
         }
+        //await localforage.setItem('1', "prueba");
         this.$nextTick(() => {
           this.$bvModal.hide('add-player-modal');
         });

@@ -1,3 +1,4 @@
+
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
@@ -30,16 +31,21 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     // https://go.nuxtjs.dev/typescript
-    '@nuxt/typescript-build'
+    '@nuxt/typescript-build',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    // https://go.nuxtjs.dev/bootstrap
-    'bootstrap-vue/nuxt',
     // https://go.nuxtjs.dev/pwa
-    '@nuxtjs/pwa'
+    '@nuxtjs/pwa',
+    'bootstrap-vue/nuxt',
+    '@nuxtjs/localforage',
   ],
+
+  localforage: {
+    name: 'padelPortfolio',
+    storeName: 'padelPortfolioForage'
+  },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
