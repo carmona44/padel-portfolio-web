@@ -26,9 +26,9 @@ export default Vue.extend({
             fields: [
                 { key: 'level', label: 'Nivel', sortable: true },
                 { key: 'name', label: 'Nombre', sortable: true },
-                { key: 'lastName', label: 'Apellido', sortable: true },
                 { key: 'position', label: 'Posición', sortable: true },
-                //{ key: 'bestShot', label: 'Golpe estrella', sortable: true },
+                { key: 'dominantHand', label: 'Mano dominante', sortable: true },
+                { key: 'bestShot', label: 'Mejor golpe', sortable: true },
             ]
         }
     }
