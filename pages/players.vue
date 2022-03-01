@@ -17,9 +17,13 @@ export default Vue.extend({
     components: { AddPlayerModal },
     async asyncData() {
         //TODO: fix refresh page 'No available storage method found' error
-        let players: any = [];
-        await localforage.iterate((value, key) => {players.push(value)});
-        return { items: players };
+        try {
+            let players: any = [];
+            await localforage.iterate((value, key) => {players.push(value)});
+            return { items: players };
+        } catch (error) {
+            console.log(error);
+        }
     },
     data() {
         return {

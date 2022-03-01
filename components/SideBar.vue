@@ -2,7 +2,7 @@
     <div>
         <b-sidebar id="sidebar-menu" title="Pádel Portfolio" shadow backdrop>
             <b-nav vertical>
-                <b-nav-item><NuxtLink to="/stats"><BIconPieChart aria-label="Go to stats page"/> Stats</NuxtLink></b-nav-item>
+                <b-nav-item><NuxtLink to="/stats"><BIconPieChart aria-label="Go to stats page"/> Estadísticas</NuxtLink></b-nav-item>
                 <b-nav-item><NuxtLink to="/players"><BIconPeople aria-label="Go to players page"/> Jugadores</NuxtLink></b-nav-item>
                 <b-nav-item><NuxtLink to="/matches"><BIconIntersect aria-label="Go to matches page"/> Partidos</NuxtLink></b-nav-item>
                 <b-nav-item><NuxtLink to="/clubs"><BIconHouseDoor aria-label="Go to clubs page"/> Clubes</NuxtLink></b-nav-item>
